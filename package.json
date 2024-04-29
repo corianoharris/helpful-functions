@@ -1,0 +1,57 @@
+{
+  "name": "wbss-clientlibs",
+  "version": "1.0.0",
+  "private": true,
+  "author": "davisg",
+  "license": "St. Jude",
+  "scripts": {
+    "build": "NODE_ENV=production gulp",
+    "build:styles": "gulp styles-build",
+    "build:webpack": "gulp webpack-build",
+    "watch": "gulp watch",
+    "unused:cypress:start": "cypress open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.18.11",
+    "core-js": "^2",
+    "cypress": "^3.3.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-babel": "6.1.2",
+    "gulp-cache": "^0.2.5",
+    "gulp-clean-css": "^3.2.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.5.0",
+    "gulp-css-urlencode-inline-svgs": "^0.0.7",
+    "gulp-kit": "^0.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-order": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.1.0",
+    "husky": "^3.0.1",
+    "node-kit": "^0.9.0",
+    "prettier": "^1.16.1",
+    "pretty-quick": "^1.10.0",
+    "through2": "^3.0.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-stream": "^5.1.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@webcomponents/template": "^1.4.2",
+    "cleave.js": "^1.5.3",
+    "dialog-polyfill": "^0.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --pattern 'src/main/content/jcr_root/etc/clientlibs/stjude/wbss/**/src/js/{.,**}/*.js'"
+    }
+  }
+}

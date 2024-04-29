@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": { "browsers": ["last 2 versions and not dead and > 2%"] },
+        "useBuiltIns": "usage",
+        "corejs": 2
+      }
+    ],
+    "@babel/react"
+  ]
+}

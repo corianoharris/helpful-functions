@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/main/content/jcr_root/etc/clientlibs/stjude/wbss/libs.utils/src/js",
+    "paths": {
+      "components/*": ["components/*"],
+      "models/*": ["models/*"],
+      "utils/*": ["utils/*"],
+      "vendor/*": ["vendor/*"]
+    }
+  },
+  "exclude": [
+    "dist", 
+    "node",
+    "node_modules",
+    "target"
+  ]
+}

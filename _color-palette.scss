@@ -1,0 +1,64 @@
+// ---------------------------------------------------
+// ******* COLOR PALETTE *********************
+//----------------------------------------------------
+
+// Primay Brand Colors
+$swatch-1: #d11947; // New Brand Red
+$swatch-2: #8d0034; // Dark Brand Red
+$light-grey: #dfe1df; // Light Grey
+$medium-grey: #c7c9c8; // Medium Grey
+$dark-grey: #474c55; // Dark Grey
+
+// Secondary Brand Colors
+$swatch-3: #712d91; // Light Purple
+$swatch-4: #1874dc; // Light Blue
+$swatch-5: #7ad0e4; // Light Aqua
+$swatch-6: #c4d82e; // Light Green, UTD
+$swatch-7: #ffc32c; // Light Yellow, CCAM
+
+$swatch-8: #4b2884; // Dark Purple
+$swatch-9: #00437b; // Dark Blue
+$swatch-10: #17818f; // Dark Aqua
+$swatch-11: #62bb46; // Dark Green
+$swatch-12: #fdb71a; // Dark Yellow
+
+// Monochromatic - greyscale colors
+$white: #fff; // white
+$black: #000; // black
+$grey-10: lighten($black, 90%); // #e6e6e6
+$grey-20: lighten($black, 80%); // #cccccc
+$grey-30: lighten($black, 70%); // #b3b3b3
+$grey-40: lighten($black, 60%); // #999999
+$grey-50: lighten($black, 50%); // #808080
+$grey-60: lighten($black, 40%); // #666666
+$grey-70: lighten($black, 30%); // #4d4d4d
+$grey-80: lighten($black, 20%); // #333333
+$grey-90: lighten($black, 10%); // #1a1a1a
+
+// Additional Colors
+$error: #e03400; // Error red
+$success: #008a1c; // Success green
+$charcoal: #2a2e30; // Charcoal grey
+$link-blue: #135cb0; // Link. Blue.
+$yellow-link-hover-color: #fff200; // used in tabs-accordion
+
+// Functional UI
+$global-link-color: $link-blue; // blue
+$global-link-hover-color: lighten($global-link-color, 20%);
+
+// @TODO: determine if this is used
+$global-link-color-2: $swatch-1; // brand red
+$global-link-hover-color-2: lighten($global-link-color-2, 20%);
+
+// @TODO: determine if these are used
+$base: $grey-20; // sets a base color for text & UI elements such as inputs, radios, buttons, etc...
+$primary: $swatch-1;
+$accent: $swatch-4; // sets an accent to the base color used for things like :focus, links, selected, etc..
+$inverse: #fff; // sets a light color for dark backgrounds
+
+// Social Media Color Swatches
+$facebook: #324d8f;
+$twitter: #00a1ed;
+$google: #db402c;
+$youtube: #b50000;
+$linkedin: #0077b5;

@@ -1,0 +1,566 @@
+// -----------------------------------------------------------
+// ******************** CONFIG FILE *********************
+//------------------------------------------------------------
+// this file is used to generate global variables and placeholders
+// to be used in your front-end styling
+
+// Import Color palette
+//------------------------------------------------
+@import "color-palette";
+@import "svg-icons";
+
+//--------------------------------------------------
+// *********** GLOBAL VARIABLES ************
+//--------------------------------------------------
+
+// No touch targeting via jQuery, Modernizer, etc...
+//-------------------------------------------------
+
+// wraps all hover effects inside of a '.no-touch' class
+// when using the include hover mixin
+$target-non-touch-devices: true; // Options = True | False
+$no-touch-class-name: no-touchevents; // define class to look for
+
+// Global radius
+//---------------------------------------------------
+$radius: 0.25rem;
+
+// Global speed transitions such as fades
+//---------------------------------------------------
+$global-transition-speed: 0.3s;
+
+// Global accent-color // default fallback
+//---------------------------------------------------
+$global-accent-color: $link-blue;
+
+// SVG Base size
+//---------------------------------------------------
+$svg-icon-base-size: 3rem;
+
+// Layout & Content
+//----------------------------------------------------
+// generates = @include _(content-wrap) : @include _(full-width)
+
+$content-max-width-breakpoint: 1080px; //max-width on elements only kicks in at this size
+
+// @TODO: Clarification on content-max-width use-case
+$content-max-width: 60%; //set max-width value on site content
+$content-width: 90%; //set default content width value for all content
+$full-width-class-name: full-width; // class name for elements to be full-width
+
+// Global Text Links
+//----------------------------------------------------
+$global-link-styling: true;
+$underline-links: false; // true = underlines || false = plain text
+
+$link-color: $global-link-color;
+$link-color-hover: $global-link-hover-color;
+$link-hover-style: transition-color;
+
+// Lazy Load Images
+//----------------------------------------------------
+$blur-lazy-loaded-images: true;
+$lazy-load-blur-radius: 1rem;
+$lazy-load-speed: $global-transition-speed;
+
+//--------------------------------------------------
+// *********** VERTICAL RHYTHM ************
+//--------------------------------------------------
+
+$base-unit: 16px; // recommended do not change
+$vr-base: 2.25; // $vr-base = vertical spacing unit for all html elements
+
+$vertical-rhythm: true;
+$axiomatic-spacing: off; // options = on | off - allows you to use vertical rhythm without forcing axiomatic margins
+$vertical-rhythm-element-name: main; //lets you scope the axiomatic spacing to only page content
+
+// toggles baseline-grid -- used for dev only
+$baseline-grid: off; // options = on | off
+
+//--------------------------------------------------
+// *********** PLACEHOLDER MAPS ************
+//--------------------------------------------------
+
+// Default Breakpoints - @min-width
+//---------------------------------------------------
+$breakpoints: (
+  "xsmall": 400px,
+  "small": 600px,
+  "tablet": 768px,
+  "medium": 900px,
+  "medium-menu": 950px,
+  "medium-large": 1050px,
+  "large": 1200px,
+  "x-large": 1400px
+);
+
+// Default Breakpoints - @max-width
+//---------------------------------------------------
+$max-breakpoints: (
+  "xsmall": 399px,
+  "small": 599px,
+  "tablet": 767px,
+  "medium": 899px,
+  "medium-menu": 949px,
+  "medium-large": 1049px,
+  "large": 1199px,
+  "x-large": 1399px
+);
+
+// Box Shadows
+//---------------------------------------------------
+// @TODO: determine which shadows are used, clean up
+$box-shadows: (
+  "depth-level-1": (
+    0 2px 6px 0 rgba(0, 0, 0, 0.1)
+  ),
+  "depth-level-2": (
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2)
+  ),
+  "depth-level-3": 0px 3px 20px 0 rgba(0, 0, 0, 0.075),
+  "depth-level-4": 0px 3px 50px 0 rgba(0, 0, 0, 0.075),
+  "depth-level-5": (
+    0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12),
+    0 8px 10px -5px rgba(0, 0, 0, 0.3)
+  )
+);
+
+// BACKGROUND COLORS / OVERLAYS / Accent Borders
+//---------------------------------------------------
+// @TODO: determine if these are used, clean up
+$background-swatches: (
+  "gradient-header": linear-gradient(120deg, $swatch-2 0, $swatch-1),
+  "bg-white": $white,
+  "bg-black": $black,
+  "bg-light-grey": $light-grey,
+  "bg-medium-grey": $medium-grey,
+  "bg-dark-grey": $dark-grey,
+  "bg-swatch-1": $swatch-1,
+  "bg-swatch-2": $swatch-2,
+  "bg-swatch-3": $swatch-3,
+  "bg-swatch-4": $swatch-4,
+  "bg-swatch-5": $swatch-5,
+  "bg-swatch-6": $swatch-6,
+  "bg-swatch-7": $swatch-7,
+  "bg-swatch-8": $swatch-8,
+  "bg-swatch-9": $swatch-9,
+  "bg-swatch-10": $swatch-10,
+  "bg-swatch-11": $swatch-11,
+  "bg-swatch-12": $swatch-12
+);
+
+$global-accent-border-size: 5px;
+
+// loops stores colors in variables to be added via accent border mixin
+// @TODO: determine if these are used, clean up
+$accent-borders: (
+  "accent-border-primary": $swatch-1,
+  "accent-border-2": darken($swatch-10, 10%),
+  "accent-border-white": $white,
+  "light-grey": $grey-10,
+  "blue-gradient": linear-gradient(120deg, $swatch-4 0, $swatch-9)
+);
+
+// Global Spacers
+// ------------------------------------------------
+
+// margin spacers prefix name scope
+$margin-uniform-prefix: m;
+$margin-horizontal-prefix: mh;
+$margin-vertical-prefix: mv;
+$margin-top-prefix: mt;
+$margin-bottom-prefix: mb;
+
+// padding spacers prefix name scope
+$padding-uniform-prefix: p;
+$padding-horizontal-prefix: ph;
+$padding-vertical-prefix: pv;
+$padding-top-prefix: pt;
+$padding-bottom-prefix: pb;
+
+// Global spacing map - appended to prefixes
+$global-spacing: (
+  "none": 0,
+  "xxxs": $vr-base * 0.125,
+  "xxs": $vr-base * 0.25,
+  "xs": $vr-base * 0.5,
+  "s": $vr-base * 1,
+  "ms": $vr-base * 1.5,
+  "m": $vr-base * 2,
+  "ml": $vr-base * 2.5,
+  "l": $vr-base * 3,
+  "xl": $vr-base * 3.5,
+  "xxl": $vr-base * 4
+);
+
+//--------------------------------------------------
+// *********** TYPOGRAPHY ************
+//--------------------------------------------------
+
+// Declare Font stacks
+//----------------------------------------
+
+// Sans-serif
+$open-sans: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+$sj-sans: "SJ Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+
+// Serif
+$merriweather: "Merriweather", "sans-serif", "Geneva", "serif";
+
+// Load Font Asset files - Does not apply css styling
+//---------------------------------------------------
+
+// Load Heading Font Files
+$heading-font-family: null; // Font Family name
+$heading-font-path: null; // set path to assets
+
+// map to load and set font-styles and font-weights
+$load-heading-font: ();
+
+// Load Body Font Files
+$body-font-family: "SJ Sans"; // Font Family name
+$body-font-path: "/etc/clientlibs/stjude/shared/fonts/sj-sans"; // set path to assets
+
+// map to load and set font-styles and font-weights
+$load-body-font: (
+  "sjs-light": (
+    normal,
+    300
+  ),
+  "sjs-regular": (
+    normal,
+    400
+  ),
+  "sjs-medium": (
+    normal,
+    600
+  ),
+  "sjs-book": (
+    normal,
+    700
+  ),
+  "sjs-bold": (
+    normal,
+    800
+  )
+);
+
+// Font Styling -- Applies css styling
+//---------------------------------------------------
+$heading-font: $sj-sans; // load or create new font stack
+$heading-font-weight: 700; // set default heading weight
+$heading-font-color: $dark-grey; // set default heading color
+
+$body-font: $sj-sans; // load or create new font stack
+$body-font-weight: 400; // set default body weight
+$body-font-color: $dark-grey; // set default body color
+
+// Modular Scale
+//----------------------------------------
+
+// Turns Modular Scale for headers on or off -- can be used for font-size modifiers
+$modular-scale: true;
+
+// Available Modular Scale Ratios
+//----------------------------------------
+$minor-second: 1.067;
+$major-second: 1.125;
+$minor-third: 1.2;
+$major-third: 1.25;
+$perfect-fourth: 1.333;
+$aug-fourth: 1.414;
+$perfect-fifth: 1.5;
+$minor-sixth: 1.6;
+$golden: 1.618;
+$major-sixth: 1.667;
+$minor-seventh: 1.778;
+$major-seventh: 1.875;
+$octave: 2;
+$major-tenth: 2.5;
+$major-eleventh: 2.667;
+$major-twelfth: 3;
+$double-octave: 4;
+
+// If Modular Scale is true set these variables
+$ms-ratio: $perfect-fourth; //ratios listed above
+$ms-base: 1; //multiplier steps (formula = ratio value x steps)
+
+// Heading map for more finite control when modular scale is enabled
+// @value = h tag
+// @params = (modular scale increment, line-height, margin-top, margin-bottom)
+$headings: (
+  "h1": (
+    4,
+    $vr-base * 1.75rem,
+    map-get($global-spacing, "s") + rem,
+    map-get($global-spacing, "xxs") + rem
+  ),
+  "h2": (
+    3,
+    $vr-base * 1.25rem,
+    map-get($global-spacing, "s") + rem,
+    map-get($global-spacing, "xxs") + rem
+  ),
+  "h3": (
+    2,
+    $vr-base * 1.125rem,
+    map-get($global-spacing, "s") + rem,
+    map-get($global-spacing, "xxs") + rem
+  ),
+  "h4": (
+    1,
+    $vr-base * 1rem,
+    map-get($global-spacing, "s") + rem,
+    map-get($global-spacing, "xxs") + rem
+  ),
+  "h5": (
+    0,
+    $vr-base * 0.875rem,
+    map-get($global-spacing, "s") + rem,
+    map-get($global-spacing, "xxs") + rem
+  ),
+  "h6": (
+    -1,
+    $vr-base * 0.75rem,
+    map-get($global-spacing, "s") + rem,
+    0
+  )
+);
+
+// Responsive Scaling of Typography & Component Sizing
+//---------------------------------------------------
+
+$responsive-scaling-breakpoints: (
+  "1px": 1.25rem,
+  "600px": 1.25rem,
+  "900px": 1.25rem
+);
+
+// Font Size Modifiers
+//----------------------------------------
+
+// font-size prefix name scope
+$font-size-modifier-prefix: fs-; //optional
+$font-size-modifier-line-height-base: $vr-base + rem; //can be overwrittern in map but recommended to keep type on grid
+
+$font-size-modifiers: (
+  "xxxl": (
+    7,
+    4.75rem
+  ),
+  "xxl": (
+    6,
+    4.5rem
+  ),
+  "xl": (
+    5,
+    3.9375rem
+  ),
+  "l": (
+    4,
+    3.375rem
+  ),
+  "ml": (
+    3,
+    2.8125rem
+  ),
+  "m": (
+    2,
+    2.25rem
+  ),
+  "ms": (
+    1,
+    2.25rem
+  ),
+  "s": (
+    0,
+    1.6875rem
+  ),
+  "xs": (
+    -1,
+    1.40625rem
+  ),
+  "xxs": (
+    -2,
+    1.125rem
+  ),
+  "xxxs": (
+    -3,
+    0.6875rem
+  )
+);
+
+// Font Weight Modifiers
+//----------------------------------------
+
+// font-weight prefix name scope
+$font-weight-modifier-prefix: fw-; //optional
+
+$font-weight-modifiers: (
+  "xlight": 300,
+  "light": 400,
+  "semi-bold": 600,
+  "bold": 700,
+  "xbold": 800
+);
+
+// Line-height Modifiers
+//----------------------------------------------------
+
+// Generates classes and placeholders for resetting line-heights
+// @value = class/placeholder name
+// @params = incremental values of $vr-base when vertical rhythm == true || or set vanilla values
+
+$line-height-modifiers: (
+  "lh-xxl": 2rem,
+  "lh-xl": 1.75rem,
+  "lh-l": 1.5rem,
+  "lh-ml": 1.25rem,
+  "lh-m": 1rem,
+  "lh-ms": 0.75rem,
+  "lh-s": 0.5rem,
+  "lh-xs": 0.25rem
+);
+
+//---------------------------------------------------
+// MENUS
+//---------------------------------------------------
+
+// @value = "AEM title attribute"
+// @params = (icon-name, top-position, icon-color, active-icon-color)
+$ams-mobile-menu-settings: (
+  "Home": (
+    "home",
+    3px,
+    0,
+    $link-blue,
+    $body-font-color
+  ),
+  "My Profile": (
+    "user",
+    2px,
+    0,
+    $link-blue,
+    $body-font-color
+  ),
+  "Contact Preferences": (
+    "settings",
+    0,
+    0,
+    $link-blue,
+    $body-font-color
+  ),
+  "Monthly Gift": (
+    "monthly-giving",
+    2px,
+    -2px,
+    $link-blue,
+    $body-font-color
+  ),
+  "Sign Out": (
+    "exit",
+    3px,
+    0,
+    $link-blue,
+    $body-font-color
+  )
+);
+
+$ams-flyout-menu-settings: (
+  "Sign Out": (
+    "exit",
+    3px,
+    $body-font-color,
+    $link-blue
+  )
+);
+
+$ams-menus: (
+  "mobile": $ams-mobile-menu-settings,
+  "flyout": $ams-flyout-menu-settings
+);
+
+//---------------------------------------------------
+// TIMING
+//---------------------------------------------------
+
+$cubic-bezier-fn: cubic-bezier(0.66, 0, 0, 1);
+$global-timing-fn: ease-in-out;
+
+//---------------------------------------------------
+// AVATARS
+//---------------------------------------------------
+
+$ams-avatar-sizes: (
+  "xxs": (
+    "xxs",
+    2.5
+  ),
+  "xs": (
+    "xs",
+    2
+  ),
+  "s": (
+    "s",
+    1.125
+  ),
+  "ms": (
+    "ms",
+    1
+  ),
+  "m": (
+    "m",
+    1
+  ),
+  "ml": (
+    "ml",
+    1
+  ),
+  "l": (
+    "l",
+    1
+  )
+);
+
+$ams-avatar-styles: (
+  "style-1": (
+    $swatch-3,
+    $white
+  ),
+  "style-2": (
+    $swatch-5,
+    $body-font-color
+  ),
+  "style-3": (
+    $swatch-7,
+    $body-font-color
+  ),
+  "style-4": (
+    $swatch-10,
+    $white
+  ),
+  "style-5": (
+    $swatch-9,
+    $white
+  )
+);
+
+//---------------------------------------------------
+// BACKGROUND IMAGE URLS
+//---------------------------------------------------
+
+$header-bg-img: "https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619.jpg";
+$header-bg-img-lg: "https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619@2x.jpg";
+
+//---------------------------------------------------
+// RESPONSIVE HEADER SETTINGS
+//---------------------------------------------------
+
+// This setting manages all breakpoint IDs for styles that effect components of the AMS General template header
+//
+// NOTE: Changing this setting should coincide with updating the "MENU_BREAKPOINTS" constant in the
+//  libs.utils/src/js/utils/constants.js file. IF YOU ARE REVIEWING THIS PR, ENSURE THAT JAVASCRIPT IS CHANGED.
+$header-mobile-breakpoint: medium-menu;

@@ -1,0 +1,350 @@
+// ----------------------------------------
+// Site Level Variables
+// ----------------------------------------
+
+// Keyframe animations
+$include-animations: null !default;
+
+@if $include-animations != false {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes scale-down {
+    from {
+      transform: scale(5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  // Source: https://projects.lukehaas.me/css-loaders/
+  @-webkit-keyframes spinner-dot-pulse-animation {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+        -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em,
+        -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+        0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+        0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+        -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+
+  // Source: https://projects.lukehaas.me/css-loaders/
+  @keyframes spinner-dot-pulse-animation {
+    0%,
+    100% {
+      box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+    12.5% {
+      box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+        -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    25% {
+      box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em,
+        -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+    37.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+        0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+        0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+      box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+        -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+      box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+        0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+  }
+}
+
+// ----------------------------------------
+// Site Level Placeholders
+// ----------------------------------------
+@include placeholder(form-label-icon) {
+  content: "";
+  background-color: $white;
+  border: 0.25rem solid $white;
+  position: absolute;
+}
+
+@include placeholder(ams-container) {
+  @include _(ph-xs);
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+@include placeholder(disable-scroll-y) {
+  overflow-y: hidden;
+}
+
+@include placeholder(focus-shadow) {
+  box-shadow: 0 0 0 4px transparentize(lighten($link-blue, 25), 0.4);
+}
+
+@include placeholder(hide-class) {
+  display: none;
+}
+
+// mh-* style placeholder for margins right/left "auto"
+@include placeholder(mh-auto) {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@include placeholder(unbutton) {
+  background-color: $white;
+  border: none;
+  font-family: $sj-sans;
+}
+
+@include placeholder(unlist) {
+  list-style-type: none;
+  @include _(m-none);
+  @include _(p-none);
+}
+
+@include placeholder(visually-hidden) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@include placeholder(msa-menu-icon) {
+  &:before {
+    content: "";
+    margin-left: map-get($global-spacing, "xxs") + rem;
+    margin-right: 1rem;
+    position: relative;
+  }
+}
+
+@include placeholder(msa-menu-icon-mobile-only) {
+  @include breakpoint($header-mobile-breakpoint) {
+    &:before,
+    &.active:before {
+      @include _(mh-none);
+      background-image: none;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@include placeholder(cc-icon-sizing) {
+  background-size: 125%;
+  background-position: 0rem 0.2rem;
+}
+
+// ----------------------------------------
+// Site Level Mixins
+// ----------------------------------------
+
+// @TODO: Determine if any of these are not used
+@mixin container {
+  width: 70%;
+  max-width: 70vw;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 0.875rem;
+
+  // container overrides
+  @content;
+}
+
+@mixin focus-shadow(
+  $show-border: true,
+  $box-shadow-style: "outset",
+  $buffer: false,
+  $buffer-color: $white
+) {
+  @if ($show-border == true) {
+    border-color: $grey-80;
+  }
+  @if ($box-shadow-style == "inset" and $buffer == false) {
+    box-shadow: 0 0 0 4px transparentize(lighten($link-blue, 25), 0.4) inset;
+  } @else {
+    @if ($buffer) {
+      box-shadow: 0 0 0 $buffer $buffer-color,
+        0 0 0 (#{$buffer} + 4px) transparentize(lighten($link-blue, 25), 0.4);
+    } @else {
+      @include _(focus-shadow);
+    }
+  }
+  outline: none;
+}
+
+@mixin icon-caret-left($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("chevron-left", $size, $color);
+  @content;
+}
+
+@mixin icon-check($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("check", $size, $color);
+  @content;
+}
+
+@mixin icon-chevron-down($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("chevron-down", $size, $color);
+  @content;
+}
+
+@mixin icon-close($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("close", $size, $color);
+  @content;
+}
+
+@mixin icon-edit-pencil($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("edit-pencil", $size, $color);
+  @content;
+}
+
+@mixin icon-info($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("info", $size, $color);
+  @content;
+}
+
+@mixin icon-save($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("save", $size, $color);
+  @content;
+}
+
+@mixin icon-warning($size, $color) {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  top: 0;
+  @include svg-icon("warning", $size, $color);
+  @content;
+}
+
+@mixin search-icon($color: $body-font-color) {
+  @include svg-icon("search-glass", 1.25rem, $color);
+  background-position: 4px 2px;
+}
+
+// ----------------------------------------
+// Static placeholders
+// ----------------------------------------
+
+// @TODO: convert to Hope placeholder/figure out better way to use this
+%ams-ui-link {
+  border: 1px solid transparent;
+  @include round-corners(4px);
+  &:focus {
+    @include focus-shadow(false);
+  }
+}

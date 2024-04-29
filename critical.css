@@ -1,0 +1,737 @@
+.ams-header .flyout-button:after,.ams-header .menu-open.flyout-button:after,.ams-header .menu-search-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 3rem;
+  height: 3rem;
+  background-size: 100%;
+}
+
+.ams-header .logo-text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#content-wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ams-header .menu-bar,.ams-header .menu-lockup,.ams-header .menu-expand,.ams-header .menu-nav {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.ams-header .menu-expand {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.ams-header .menu-nav,.ams-header .menu-search {
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.ams-header .menu-lockup,.ams-header .menu-expand,.ams-header .menu-nav {
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.ams-header .menu-bar {
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+.ams-header .menu-bar {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+}
+
+.ams-header .menu-search-toggle {
+  background-color: #fff;
+  border: none;
+  font-family: "SJ Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+ /* 3 */
+  -webkit-text-size-adjust: 100%;
+ /* 3 */;
+}
+
+body {
+  margin: 0;
+}
+
+article,aside,footer,header,nav,section {
+  display: block;
+}
+
+figcaption,figure,main {
+ /* 1 */
+  display: block;
+  margin: 0;
+}
+
+hr {
+  height: 0;
+ /* 1 */
+  overflow: visible;
+ /* 2 */;
+}
+
+pre {
+  font-family: monospace, monospace;
+ /* 1 */
+  font-size: 1em;
+ /* 2 */;
+}
+
+a {
+  background-color: transparent;
+ /* 1 */
+  -webkit-text-decoration-skip: objects;
+ /* 2 */;
+}
+
+a:active,a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+ /* 1 */
+  text-decoration: underline;
+ /* 2 */
+  text-decoration: underline dotted;
+ /* 2 */;
+}
+
+b,strong {
+  font-weight: inherit;
+}
+
+b,strong {
+  font-weight: bolder;
+}
+
+code,kbd,samp {
+  font-family: monospace, monospace;
+ /* 1 */
+  font-size: 1em;
+ /* 2 */;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,input,optgroup,select,textarea {
+  font-family: sans-serif;
+ /* 1 */
+  font-size: inherit;
+ /* 1 */
+  margin: 0;
+ /* 2 */;
+}
+
+button,input {
+ /* 1 */
+  overflow: visible;
+}
+
+button,select {
+ /* 1 */
+  text-transform: none;
+}
+
+button,html [type="button"],[type="reset"],[type="submit"] {
+  -webkit-appearance: button;
+ /* 2 */;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+legend {
+  color: inherit;
+ /* 2 */
+  display: table;
+ /* 1 */
+  max-width: 100%;
+ /* 1 */
+  padding: 0;
+ /* 3 */
+  white-space: normal;
+ /* 1 */;
+}
+
+progress {
+  display: inline-block;
+ /* 1 */
+  vertical-align: baseline;
+ /* 2 */;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],[type="radio"] {
+  padding: 0;
+ /* 2 */;
+}
+
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+ /* 1 */
+  outline-offset: -2px;
+ /* 2 */;
+}
+
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+ /* 1 */
+  font: inherit;
+ /* 2 */;
+}
+
+details,menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+html,body {
+  min-height: 100%;
+  font-family: "SJ Sans", "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+body {
+  width: 100%;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.ams-header .flyout-nav {
+  border-bottom-left-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+  overflow: hidden;
+  background-color: #fff;
+  display: none;
+  opacity: 0;
+  overflow: visible;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translateY(-10%);
+  transition: 0.3s opacity ease-in-out, 0.3s transform ease-in-out;
+  z-index: 3;
+}
+
+.ams-header .transition.flyout-nav {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ams-header .active.flyout-nav {
+  display: block;
+}
+
+.ams-header .flyout-button {
+  color: #474c55;
+  border-bottom: none;
+  display: none;
+  z-index: 4;
+}
+
+.ams-header .flyout-button:after {
+  content: "";
+  margin-left: 0.5rem;
+  position: relative;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2250%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%23666666%22%20stroke%3D%22%22%20stroke-width%3D%22%22%20d%3D%22M1.75839995%2C2.49368889%20C1.31228117%2C3.56997889%201.5585765%2C4.80903383%202.38239996%2C5.63288889%20L22.9648%2C26.2152889%20C24.0892194%2C27.3383099%2025.9107806%2C27.3383099%2027.0352%2C26.2152889%20L47.6176001%2C5.63288889%20C48.1578592%2C5.09330222%2048.4617278%2C4.361255%2048.4624001%2C3.59768889%20C48.4606678%2C3.21889489%2048.385691%2C2.84401106%2048.2416001%2C2.49368889%20C47.7954677%2C1.41876956%2046.7462237%2C0.718010944%2045.5824001%2C0.717688889%20L4.41759996%2C0.717688889%20C3.2537763%2C0.718010944%202.20453233%2C1.41876956%201.75839995%2C2.49368889%20Z%22%2F%3E%3C%2Fsvg%3E');
+}
+
+.ams-header .menu-open.flyout-button:after {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2250%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%23666666%22%20stroke%3D%22%22%20stroke-width%3D%22%22%20d%3D%22M48.2416001%2C25.2840889%20C48.6877188%2C24.2077989%2048.4414235%2C22.9687439%2047.6176001%2C22.1448889%20L27.0352%2C1.56248889%20C25.9107806%2C0.439467889%2024.0892194%2C0.439467889%2022.9648%2C1.56248889%20L2.38239996%2C22.1448889%20C1.8421408%2C22.6844756%201.53827215%2C23.4165228%201.53759995%2C24.1800889%20C1.53933222%2C24.5588829%201.61430899%2C24.9337667%201.75839995%2C25.2840889%20C2.20453233%2C26.3590082%203.2537763%2C27.0597668%204.41759996%2C27.0600889%20L45.5824001%2C27.0600889%20C46.7462237%2C27.0597668%2047.7954677%2C26.3590082%2048.2416001%2C25.2840889%20Z%22%20%2F%3E%3C%2Fsvg%3E');
+}
+
+.ams-header .menu-nav .mobile-nav-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+}
+
+.ams-header .menu-nav .nav-link-list {
+  list-style-type: none;
+}
+
+.ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+  display: block;
+  position: relative;
+}
+
+.ams-header .menu-nav .nav-link:before,.ams-header .menu-search-toggle:before,.ams-header .menu-nav .nav-link:after,.ams-header .menu-search-toggle:after {
+  content: "";
+}
+
+.ams-header {
+  position: relative;
+  z-index: 4;
+}
+
+.ams-header .menu-bar {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.ams-header .menu-lockup {
+  color: #d11947;
+}
+
+.ams-header .menu-nav {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ams-header .menu-search {
+  z-index: 1;
+}
+
+.ams-header .menu-search-toggle {
+  display: none;
+}
+
+.ams-header .menu-search-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2250%22%20height%3D%2250%22%3E%3Cpath%20fill%3D%22%23474c55%22%20stroke%3D%22%22%20stroke-width%3D%22%22%20d%3D%22M24.5875%2C0.374968302%20C18.7795542%2C0.36311978%2013.4822128%2C3.69152255%2010.9727484%2C8.92936212%20C8.46328396%2C14.1672017%209.18883712%2C20.3811911%2012.8375%2C24.9%20L11.25%2C26.4625%20L10.5%2C25.725%20L1.5%2C34.75%20C0.481725029%2C35.7855339%200.495716148%2C37.450475%201.53125004%2C38.46875%20C2.56678393%2C39.487025%204.23172499%2C39.4730339%205.25%2C38.4375%20L14.275%2C29.425%20L13.525%2C28.675%20L15%2C27.125%20C20.1355733%2C31.3399138%2027.4238643%2C31.6994176%2032.94931%2C28.0103715%20C38.4747557%2C24.3213253%2040.9367791%2C17.4520554%2039.0126822%2C11.0930096%20C37.0885853%2C4.73396391%2031.2312612%2C0.381931807%2024.5875%2C0.374968302%20L24.5875%2C0.374968302%20Z%20M24.5875%2C27.425%20C17.9807937%2C27.425%2012.625%2C22.0692063%2012.625%2C15.4625%20C12.625%2C8.85579368%2017.9807937%2C3.5%2024.5875%2C3.5%20C31.1942063%2C3.5%2036.55%2C8.85579368%2036.55%2C15.4625%20C36.5362479%2C22.0635016%2031.1885016%2C27.4112479%2024.5875%2C27.425%20Z%22%20%2F%3E%3Cpath%20fill%3D%22%23474c55%22%20stroke%3D%22%22%20stroke-width%3D%22%22%20d%3D%22M33.75%2C15.525%20C33.7467123%2C15.3260787%2033.6645238%2C15.136614%2033.5215213%2C14.9983001%20C33.3785187%2C14.8599861%2033.1864204%2C14.784157%2032.9875%2C14.7875%20C32.7897177%2C14.7874716%2032.6002122%2C14.8668858%2032.4615391%2C15.0079093%20C32.322866%2C15.1489328%2032.2466478%2C15.3397461%2032.25%2C15.5375%20L32.25%2C15.6875%20C32.25%2C15.875%2032.25%2C16.0625%2032.25%2C16.25%20C32.2327692%2C16.4477681%2032.2959953%2C16.6441316%2032.4253823%2C16.794691%20C32.5547693%2C16.9452504%2032.7393899%2C17.0372904%2032.9375%2C17.05%20L33%2C17.05%20C33.3886956%2C17.0455099%2033.711791%2C16.7493391%2033.75%2C16.3625%20C33.75%2C16.125%2033.75%2C15.9%2033.75%2C15.675%20L33.75%2C15.525%20Z%22%20%2F%3E%3Cpath%20fill%3D%22%23474c55%22%20stroke%3D%22%22%20stroke-width%3D%22%22%20d%3D%22M32.5%2C18.5875%20C32.3264799%2C18.49046%2032.1211307%2C18.467587%2031.9305106%2C18.5240671%20C31.7398906%2C18.5805471%2031.5801477%2C18.7115955%2031.4875%2C18.8875%20C30.614883%2C20.5022741%2029.127594%2C21.6966123%2027.3625%2C22.2%20C26.9663765%2C22.3149516%2026.7374162%2C22.728197%2026.85%2C23.125%20C26.9351214%2C23.4488103%2027.2276886%2C23.6746517%2027.5625%2C23.675%20L27.775%2C23.675%20C29.9164434%2C23.0484185%2031.7173921%2C21.58965%2032.775%2C19.625%20C32.8821952%2C19.4524264%2032.9134552%2C19.2432769%2032.861404%2C19.0469019%20C32.8093528%2C18.850527%2032.6786009%2C18.6843204%2032.5%2C18.5875%20L32.5%2C18.5875%20Z%22%20%2F%3E%3C%2Fsvg%3E');
+  background-position: 4px 2px;
+  transform: scaleX(-1);
+}
+
+.ams-header .menu-search-wrapper {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  transition: 0.3s overflow 0.6s;
+  width: 100%;
+}
+
+.ams-header .menu-search-wrapper.show-overflow {
+  overflow: visible;
+}
+
+.ams-header .menu-search-container {
+  background-color: #fff;
+  margin: 0 auto;
+  transition: 0.3s opacity ease-in-out, 0.3s transform ease-in-out;
+}
+
+.ams-header .menu-expand {
+  -ms-flex-order: 2;
+  order: 2;
+  z-index: 6;
+}
+
+.ams-header .lockup-logo {
+  padding-right: 0.5625rem;
+}
+
+.ams-header .lockup-logo svg {
+  height: 2.61333rem;
+  width: 4rem;
+}
+
+.ams-header .lockup-platform {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.ams-header .background {
+  background-color: #ccc;
+  background-image: url("https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 35%;
+  height: 12rem;
+}
+
+a {
+  cursor: pointer;
+  color: #135cb0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #3f8eea;
+}
+
+.ams-header .menu-lockup {
+  margin: 0rem;
+}
+
+.ams-header .menu-nav {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.ams-header .menu-bar {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.ams-header .menu-search {
+  margin-left: 0.28125rem;
+  margin-right: 0.28125rem;
+}
+
+.ams-header .flyout-button,.ams-header .menu-search-container {
+  padding: 0.5625rem;
+}
+
+.ams-header .menu-bar {
+  padding-left: 0.5625rem;
+  padding-right: 0.5625rem;
+}
+
+.ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle,.ams-header .lockup-logo {
+  padding-top: 0.5625rem;
+  padding-bottom: 0.5625rem;
+}
+
+.ams-header .flyout-nav {
+  padding-top: 0.5625rem;
+}
+
+.ams-header .menu-nav .nav-link-list {
+  margin-top: 1.125rem;
+}
+
+.ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+
+.ams-header .flyout-button,.ams-header {
+  font-size: 0.75019rem;
+  line-height: 1.40625rem;
+}
+
+.ams-header .flyout-button {
+  font-weight: 600;
+}
+
+.ams-header .lockup-platform strong {
+  font-weight: 800;
+}
+
+.ams-header {
+  line-height: 1.125rem;
+}
+
+.ams-header .flyout-nav,.ams-header .menu-bar {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.full-width {
+  max-width: none;
+  width: 100%;
+}
+
+.ams-header .menu-lockup {
+  text-align: left;
+}
+
+@media only screen and (orientation: landscape) {
+  .ams-header .background {
+    height: 9rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .ams-header .background:after {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .ams-header .background {
+    height: 18rem;
+  }
+
+  .ams-header .background:after {
+    content: url("https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619.jpg") url("https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619@2x.jpg");
+  }
+}
+
+@media (min-width: 950px) {
+  .ams-header .flyout-button,.ams-header .menu-nav .nav-link-list,.ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle,.ams-header .menu-search {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .ams-header .menu-nav .nav-link-list {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+
+  .ams-header .flyout-button,.ams-header .menu-nav .nav-link-list,.ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+  }
+
+  .ams-header .menu-nav .nav-link-list {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+  }
+
+  .ams-header .menu-nav .mobile-nav-wrapper {
+    display: block;
+    position: relative;
+    transform: translateX(0);
+  }
+
+  .ams-header .menu-nav .nav-link-list {
+    height: 100%;
+  }
+
+  .ams-header .menu-nav .nav-link-item {
+    height: 100%;
+  }
+
+  .ams-header .menu-nav .mobile-only.nav-link-item {
+    display: none;
+  }
+
+  .ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+    height: 100%;
+    position: relative;
+  }
+
+  .ams-header .menu-bar {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    overflow: visible;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 2.25rem);
+  }
+
+  .ams-header .menu-nav {
+    max-width: 900px;
+  }
+
+  .ams-header .menu-search-toggle {
+    -ms-flex-item-align: center;
+    align-self: center;
+    height: 4rem;
+  }
+
+  .ams-header .menu-search-wrapper {
+    overflow: hidden;
+  }
+
+  .ams-header .menu-search-container {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .ams-header .menu-nav .nav-link-list {
+    margin-top: 0rem;
+  }
+
+  .ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+    padding-left: 0.5625rem;
+    padding-right: 0.5625rem;
+  }
+
+  .ams-header .menu-search-container {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+  }
+
+  .ams-header {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
+
+  .ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle,.ams-header .menu-lockup {
+    font-size: 0.75019rem;
+    line-height: 1.40625rem;
+  }
+
+  .ams-header .menu-nav .nav-link,.ams-header .menu-search-toggle {
+    font-weight: 600;
+  }
+
+  .ams-header,.ams-header .menu-lockup {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 1050px) {
+  .ams-header .menu-nav .nav-link-item {
+    margin-left: 0.28125rem;
+    margin-right: 0.28125rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  #content-wrapper {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ams-header .background {
+    background-image: url("https://www.stjude.org/content/dam/en_US/shared/www/ams/AMS-Header-CalebB_Colors082619@2x.jpg");
+  }
+
+  .ams-header .menu-nav .nav-link-item {
+    margin-left: 0.5625rem;
+    margin-right: 0.5625rem;
+  }
+
+  .ams-header .menu-lockup {
+    font-size: 1rem;
+    line-height: 1.6875rem;
+  }
+
+  .ams-header .menu-lockup {
+    line-height: 1.125rem;
+  }
+}

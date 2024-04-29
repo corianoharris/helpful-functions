@@ -1,0 +1,16 @@
+{
+  "name": "msa-ui-testing",
+  "version": "0.0.0",
+  "description": "E2E testing suite for MSA prototyping environment",
+  "main": "index.js",
+  "author": "Geoff Davis <geoff.davis@stjude.org>",
+  "license": "StJude",
+  "private": true,
+  "scripts": {
+    "format": "prettier ./integration/msa/{**,.}/*.js  --write"
+  },
+  "devDependencies": {
+    "cypress": "^6.7.1",
+    "prettier": "^2.4.1"
+  }
+}
